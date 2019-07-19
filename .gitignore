@@ -63,3 +63,5 @@ frontend/.next/
 .build/
 layout.md
 variables.env
+
+dist
