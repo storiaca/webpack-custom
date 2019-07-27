@@ -7,6 +7,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(.js?x)$/,
+        exclude: /node_modules/,
+        use: ["babel-loader"]
+      },
+      {
         test: /\.html$/,
         use: ["html-loader"]
       },
@@ -21,5 +26,8 @@ module.exports = {
         }
       }
     ]
+  },
+  resolve: {
+    extensions: ["*", ".js", ".jsx"]
   }
 };
