@@ -1,7 +1,7 @@
-import { run } from "./app/app";
-import { AlertService } from "./app/alert.service";
-import { ComponentService } from "./app/component.service";
+import React from "react";
+import ReactDOM from "react-dom";
 import "./main.scss";
-const alertService = new AlertService();
-const componentService = new ComponentService();
-run(alertService, componentService);
+
+const title = "React with Webpack and Babel";
+
+ReactDOM.render(<div>{title}</div>, document.getElementById("app"));
